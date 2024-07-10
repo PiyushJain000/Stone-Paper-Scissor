@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GAME</title>
+        <link rel="stylesheet" href="game.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Rock Paper Scissor</h1>
+        </div>
+        <div calss="Game">
+            <button class="btn" id="rock"><i
+                    class="fas fa-hand-rock"></i></button>
+            <button class="btn" id="paper"><i
+                    class="fas fa-hand-paper"></i></button>
+            <button class="btn" id="scissor"> <i
+                    class="fas fa-hand-scissors"></i></button>
+
+        </div>
+        <div class="scoreboard">
+            <div class="score">
+                <p id="userscore">0</p>
+                <p>YOU</p>
+            </div>
+            <div class="score">
+                <p id="compscore">0</p>
+                <p>COMP</p>
+            </div>
+        </div>
+        <div id="result">
+        </div>
+
+        <script src="game.js"></script>
+    </body>
+</html>

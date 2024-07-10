@@ -1,0 +1,121 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Arial", sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  color: white;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, color 0.3s;
+}
+
+.header h1:hover {
+  transform: scale(1.1);
+  color: #ffeb3b;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.btn {
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin: 0 15px;
+  padding: 20px;
+  margin-top: 70px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background: #ff7e5f;
+  transform: scale(1.1);
+}
+
+.btn i {
+  font-size: 3rem;
+  color: #333;
+  transition: color 0.3s;
+  margin-top: 10px; /* Move icons down */
+}
+
+.btn:hover i {
+  color: #fff;
+}
+
+#result {
+  margin-top: 30px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.score {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.score p {
+  margin: 5px 0;
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.score p#user-score,
+.score p#comp-score {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff7e5f;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.score p:hover {
+  color: #ff7e5f;
+  transform: scale(1.1);
+}
